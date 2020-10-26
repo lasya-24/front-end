@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+        body {
+          background-color: whitesmoke;
+        }
+        
+        h1 {
+          color: darkblue;
+          text-align: center;
+        }
+        
+        p {
+          color: darkorchid;
+          font-family: verdana;
+          font-size: 20px;
+        }
+    </style>
+    <script type = "text/javascript"> 
+        function sayHi(){
+            var txtName = document.getElementById("txtName");
+            var txtOutput = document.getElementById("txtOutput");
+            var name = txtName.value;
+            txtOutput.value = "Hi there, " + name + ", nice to meet you :)"
+        }
+    </script>
+    
+  </head>
+  <body>
+    <h1>Banky Chatbot</h1>
+    <p>Hi! I am banky bot, your personal assistant to help you with bank related queries.</p>
+    <form action="">
+        <fieldset>
+            <label>Type your name : </label>
+            <input type = "text"
+            id = "txtName" />
+            <input type = "button"
+            value="Click me"
+            onclick="sayHi()"/>
+            <p Id = "textOutput"></p>
+            <input type = "text"
+            id = "txtOutput"/>
+        </fieldset>
+    </form>
+    <p id="create_account">Details of how to create an account</p>
+    <button type="button" onclick='document.getElementById("create_account").innerHTML = "To create an acount you require \n -A Passport Photo \n -Address Proof like Aadhar Card, driving licence \n -Id proof like pan card. "'>Click Me!</button>
+    <p id="get_loans">Details of how to get loans </p>
+    <button type="button" onclick='document.getElementById("get_loans").innerHTML = "To get loans you must have \n -An Employee payslip or Income Tax returns."'>Click Me!</button>
+    <p id="account_types">Different types of accounts present </p>
+    <button type="button" onclick='document.getElementById("account_types").innerHTML = "There are different types of accounts like:\n 1. Savings Account\n 2. Current Account\n 3. Fixed Deposits\n 4. Recurring Deposits\n -Savings is used for individuals.\n -Current account is usally given to business people like shops."'>Click Me!</button>
+    <p id="loan_types">Different types of loans given to customers </p>
+    <button type="button" onclick='document.getElementById("loan_types").innerHTML = "There are different types of loans like:\n 1. Personal Loans\n 2. Business Loans\n 3. Vechicle Loans\n 4. Gold Loans etc...\n -Personal Loans are given to individuals based on their requirements.\n -Business Loans are given to companies as working capitals."'>Click Me!</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
